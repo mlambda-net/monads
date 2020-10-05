@@ -2,8 +2,8 @@
 package task
 
 import (
-  "mlambda.net/monads"
-  "mlambda.net/monads/mono"
+  "github.com/mlambda-net/monads"
+  "github.com/mlambda-net/monads/mono"
 )
 
 type Task interface {

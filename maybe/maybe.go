@@ -1,6 +1,6 @@
 package maybe
 
-import "mlambda.net/monads"
+import "github.com/mlambda-net/monads"
 
 type Monad interface {
   Bind(func(types.Any) Monad) Monad

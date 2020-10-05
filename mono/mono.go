@@ -1,6 +1,6 @@
 package mono
 
-import "mlambda.net/monads"
+import "github.com/mlambda-net/monads"
 
 type Mono interface {
   Bind(func(any types.Any) Mono) Mono

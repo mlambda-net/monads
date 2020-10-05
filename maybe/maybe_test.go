@@ -1,8 +1,8 @@
 package maybe
 
 import (
+  "github.com/mlambda-net/monads"
   "github.com/stretchr/testify/assert"
-  "mlambda.net/monads"
   "testing"
 )
 

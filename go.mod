@@ -1,4 +1,4 @@
-module mlambda.net/monads
+module github.com/mlambda-net/monads
 
 go 1.15
 

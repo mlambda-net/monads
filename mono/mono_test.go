@@ -2,8 +2,8 @@ package mono
 
 import (
   "errors"
+  "github.com/mlambda-net/monads"
   "github.com/stretchr/testify/assert"
-  "mlambda.net/monads"
   "testing"
 )
 

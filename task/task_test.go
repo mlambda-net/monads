@@ -2,8 +2,8 @@ package task
 
 import (
   "errors"
+  types "github.com/mlambda-net/monads"
   "github.com/stretchr/testify/assert"
-  types "mlambda.net/monads"
   "testing"
   "time"
 )
