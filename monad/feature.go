@@ -1,18 +1,16 @@
 package monad
 
-import "github.com/mlambda-net/monads/mono"
-
 type Future interface {
 	SetResult(data interface{})
 	Result() (interface{}, error)
 }
 
 type future struct {
-	pipe chan mono.Mono
+	pipe chan Mono
 }
 
 func (f *future) SetResult(data interface{}) {
-	f.pipe <- mono.ToMono(data)
+	f.pipe <- ToMono(data)
 }
 
 func (f *future) Result() (interface{}, error) {
@@ -21,5 +19,5 @@ func (f *future) Result() (interface{}, error) {
 }
 
 func NewFuture() Future {
-	return &future{pipe: make(chan mono.Mono)}
+	return &future{pipe: make(chan Mono)}
 }
