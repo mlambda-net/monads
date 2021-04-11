@@ -6,8 +6,19 @@ type Maybe interface {
 	Bind(func(types.Any) Maybe) Maybe
 }
 
+type Just interface {
+  Value() interface{}
+}
+
+type Nothing interface {
+}
+
 type just struct {
 	value interface{}
+}
+
+func (j *just) Value() interface{} {
+  return j.value
 }
 
 func (j just) Bind(fn func(value types.Any) Maybe) Maybe {
